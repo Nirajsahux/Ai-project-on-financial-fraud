@@ -19,8 +19,8 @@ for row in ws.iter_rows(min_row=2):
         print(f"{value} %. Chance of this number to be a spam")
         ans = input("Do you want to mark the number as spam (yes/no)? ")
         if ans.lower() == "yes":
-            spam_report = row[7].value
-            row[7].value = spam_report + 2
+            spam_value = row[8].value
+            row[8].value = spam_value + 2
             print(f"Your respons has been saved.Thanks for your contribution ! ")
         break
 
